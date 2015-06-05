@@ -257,9 +257,9 @@ def convert(sInFile, sOutFile = None, bReport = True):
 	#shutil.copy(sInFile, sInFile + "_dbackup")
 	
 	# Copy the new file over the old file.
-	#shutil.copy(sOutFile, sInFile)
+	shutil.copy(sOutFile, sInFile)
 	
-	#os.remove(sOutFile)
+	os.remove(sOutFile)
 	
 	# Report.
 	if bReport:
